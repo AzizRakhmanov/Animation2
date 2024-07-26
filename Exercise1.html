@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise - 1</title>
+
+    <style>
+      .cubics {
+        width: 960px;
+        height: 600px;
+        background-color: antiquewhite;
+        border: 1px solid black;
+      }
+
+      @keyframes cubic {
+        0% {
+          width: 50px;
+          height: 50px;
+        }
+
+        50%{
+            width: 50%;
+        }
+
+        100% {
+          width: 0%;
+          height: 50px;
+        }
+      }
+
+      .first {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        margin-left: 30px;
+
+        animation-fill-mode: backwards;
+        animation-duration: 2s;
+        animation-timing-function:step-end;
+        animation-timing-function: ease-in;
+      }
+
+      .first:hover{
+        animation-name: cubic;
+        animation-play-state:start
+      }
+
+      .second:hover{
+        animation-name: cubic;
+        animation-play-state:start
+      }
+
+
+      .second{
+        margin-top: 10px;
+        margin-left: 30px;
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+
+        
+        animation-fill-mode:backwards;
+        animation-duration: 2s;
+        animation-timing-function: step-end;
+        animation-timing-function: ease-in;
+
+      }
+
+  
+    </style>
+  </head>
+
+  <body>
+    <div class="cubics">
+      <div class="first">
+        <h1></h1>
+      </div>
+
+      <div class="second"></div>
+    </div>
+  </body>
+</html>
